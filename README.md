@@ -9,10 +9,10 @@ The UVA Chinese Students & Scholars Society (CSSS) is a vibrant student organiza
 ## Features
 
 - **Multi-page Navigation**: Professional website structure with dedicated pages
-- **UVA-Inspired Design**: Clean, modern design matching UVA's official aesthetic
 - **Responsive Layout**: Optimized for desktop, tablet, and mobile devices
 - **Interactive Elements**: Smooth animations, event filtering, and dynamic content
 - **Cultural Integration**: Bilingual content and cultural celebration focus
+- **Comprehensive Resources**: Specialized guides for students
 
 ## Pages
 
@@ -20,10 +20,12 @@ The UVA Chinese Students & Scholars Society (CSSS) is a vibrant student organiza
 - **About** (`about.html`) - Mission, history, and values of CSSS
 - **Events** (`events.html`) - Upcoming events with filtering functionality
 - **Team** (`team.html`) - Leadership team and committee information
-- **Join** (`join.html`) - Membership information and community connection
-- **Contact** (`contact.html`) - Contact forms and department information
 - **Partners** (`partners.html`) - Sponsorship and partnership opportunities
-- **Resources** (`resources.html`) - Newcomer survival guide and UVA resources
+- **Resources** (`resources.html`) - Student resources for all years
+- **Housing Guide** (`housing.html`) - Comprehensive housing information
+- **First-Year Survival Guide** (`survival-guide.html`) - Essential tips for new students
+- **Join** (`join.html`) - Membership information and community connection
+- **Contact** (`contact.html`) - Contact information and support
 
 ## Quick Start
 
@@ -64,9 +66,14 @@ The UVA Chinese Students & Scholars Society (CSSS) is a vibrant student organiza
 
 We welcome contributions from CSSS members and the UVA community! Please see [DEVELOPER.md](DEVELOPER.md) for technical details and contribution guidelines.
 
+## Developer
+
+**Website Development**: Qiaojing Huang  
+**Design & Implementation**: Custom UVA-inspired design with responsive layout and interactive features
+
 ## Contact
 
-- **All Inquiries**: csss@virginia.edu
+- **All Inquiries**: csssatuva@gmail.com
 
 ## License
 

@@ -2,11 +2,19 @@
 
 Technical documentation for the UVA CSSS website development and maintenance.
 
+## Developer Information
+
+**Primary Developer**: Qiaojing Huang  
+**Organization**: UVA Chinese Students & Scholars Society (CSSS)  
+**Development Period**: 2024-2025  
+**Technology Stack**: HTML5, CSS3, Vanilla JavaScript
+
 ## Project Structure
 
 ```
 uvacsss-site/
 ├── assets/                 # Static assets
+│   ├── departments/       # Department photos and leader portraits
 │   ├── officers/          # Team member photos
 │   ├── partners/          # Partner/sponsor logos
 │   ├── about.jpg          # About section image
@@ -14,10 +22,21 @@ uvacsss-site/
 │   ├── logo.png           # CSSS logo
 │   └── wechat_qr.jpg      # WeChat QR code
 ├── *.html                 # Individual page files
+│   ├── index.html         # Homepage with overview
+│   ├── about.html         # Mission and values
+│   ├── events.html        # Events with filtering
+│   ├── team.html          # Leadership and departments
+│   ├── partners.html      # Partnership opportunities
+│   ├── resources.html     # General student resources
+│   ├── housing.html       # Comprehensive housing guide
+│   ├── survival-guide.html # First-year specific guidance
+│   ├── join.html          # Membership and community
+│   └── contact.html       # Contact information
 ├── style.css              # Main stylesheet
 ├── main.js                # JavaScript functionality
 ├── package.json           # Node.js dependencies
-└── README.md              # Project documentation
+├── README.md              # Project documentation
+└── DEVELOPER.md           # Technical documentation
 ```
 
 ## Development Setup
@@ -256,9 +275,21 @@ npm run serve
 ## Contact
 
 For technical questions or contributions:
-- **Development Team**: csss-tech@virginia.edu
-- **Project Lead**: [Current maintainer email]
+- **Primary Developer**: Qiaojing Huang
+- **Organization Contact**: csssatuva@gmail.com
 - **Issues**: Submit via repository issue tracker
+
+## Recent Updates
+
+### 2025-2026 Development
+- ✅ Complete website initial design
+- ✅ Multi-page navigation structure with mega menu
+- ✅ Responsive design for all device sizes
+- ✅ Resource guides for students
+- ✅ Bilingual content integration
+- ✅ Interactive event filtering and animations
+- ✅ Mobile-optimized navigation with hamburger menu
+- ✅ Comprehensive resource sections for all student needs
 
 ---
 
