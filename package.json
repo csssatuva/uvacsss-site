@@ -1,0 +1,14 @@
+{
+  "name": "uvacsss-site",
+  "version": "1.0.0",
+  "description": "Official website for the UVA Chinese Students & Scholars Society (CSSS).",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000"
+  },
+  "author": "UVA CSSS",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}

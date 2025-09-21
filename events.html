@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Events | UVA Chinese Students & Scholars Society</title>
+  <meta name="description" content="Discover upcoming CSSS events — cultural festivals, career panels, and community gatherings at UVA.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ===== Header ===== -->
+  <header id="site-header" class="header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="CSSS Home">
+        <img class="brand-logo" src="assets/logo.png" alt="CSSS Logo">
+        <span class="brand-text">UVA CSSS</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+          <span class="menu-bars"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <ul id="primary-menu" class="menu">
+          <li class="menu-item"><a href="about.html">About</a></li>
+          <li class="menu-item has-mega" aria-haspopup="true" aria-expanded="false">
+            <button class="mega-trigger is-active">Events</button>
+            <div class="mega" role="group" aria-label="Events menu">
+              <div class="mega-col">
+                <h4>Highlights</h4>
+                <a href="events.html">Upcoming Events</a>
+                <a href="events.html?filter=cultural">Cultural</a>
+                <a href="events.html?filter=career">Career & Panels</a>
+              </div>
+              <div class="mega-col">
+                <h4>Get Involved</h4>
+                <a href="join.html">Join CSSS</a>
+                <a href="survival-guide.html">Survival Guide</a>
+              </div>
+            </div>
+          </li>
+          <li class="menu-item"><a href="team.html">Team</a></li>
+          <li class="menu-item"><a href="partners.html">Partners</a></li>
+          <li class="menu-item"><a href="resources.html">Resources</a></li>
+          <li class="menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Main Content ===== -->
+  <main>
+    <!-- Page Header -->
+    <section class="section--band" style="padding: 60px 0;">
+      <div class="container">
+        <h1 style="color: white; font-size: 3rem; margin: 0; text-align: center;">Events</h1>
+        <p style="color: rgba(255,255,255,0.9); font-size: 1.2rem; text-align: center; margin: 16px 0 0;">Join us for cultural celebrations, career development, and community building</p>
+      </div>
+    </section>
+
+    <!-- Events Content -->
+    <section class="section">
+      <div class="container">
+        <h2 class="reveal">Upcoming Events</h2>
+        <p class="muted reveal delay-1">Follow us for the latest cultural, social, and career development activities.</p>
+
+        <div class="filters reveal delay-2" role="tablist" aria-label="Event filters">
+          <button class="chip is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="chip" data-filter="cultural" role="tab" aria-selected="false">Cultural</button>
+          <button class="chip" data-filter="career" role="tab" aria-selected="false">Career</button>
+        </div>
+
+        <div id="events-list" class="cards reveal delay-3" aria-live="polite">
+          <!-- Events will be populated by JavaScript -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Past Events -->
+    <section class="section section--alt">
+      <div class="container">
+        <h2 class="reveal">Recent Highlights</h2>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>新生欢迎会 New Student Welcome</h3>
+            <p><strong>August 23, 2025</strong></p>
+            <p class="muted">Over 80 new students joined us for an afternoon of introductions, campus tours, and practical advice. Senior members shared their favorite local restaurants, grocery stores, and study spots, while new friendships formed over traditional snacks and games.</p>
+            <p class="muted" style="font-style: italic;">超过80名新生参加了我们的下午活动，包括自我介绍、校园参观和实用建议分享。学长学姐们分享了他们最喜欢的当地餐厅、杂货店和学习地点，新同学们在品尝传统小食和游戏中建立了新的友谊。</p>
+          </article>
+          <article class="card reveal delay-1">
+            <h3>春晚 Chinese New Year Gala</h3>
+            <p><strong>February 1, 2025</strong></p>
+            <p class="muted">A spectacular evening with over 300 attendees featuring 15 student performances including a traditional lion dance, classical Chinese poetry recitation, modern dance fusion, and popular song covers. The highlight was the group calligraphy session where everyone wrote New Year wishes, followed by a feast of homemade dumplings and traditional sweets.</p>
+            <p class="muted" style="font-style: italic;">一个壮观的夜晚，超过300名观众观看了15个学生表演，包括传统舞狮、古典诗词朗诵、现代舞蹈融合和流行歌曲翻唱。活动的亮点是集体书法环节，每个人都写下了新年愿望，随后享用了自制饺子和传统甜点的盛宴。</p>
+          </article>
+          <article class="card reveal delay-2">
+            <h3>好声音 UVA Voice</h3>
+            <p><strong>October 19 & November 2, 2024</strong></p>
+            <p class="muted">This year's competition featured 25 talented contestants across auditions and preliminaries, with 8 finalists delivering stunning performances ranging from classical Chinese ballads to contemporary pop hits. The intimate audience of 50+ students created a warm, supportive atmosphere with enthusiastic cheers and sing-alongs throughout the evening.</p>
+            <p class="muted" style="font-style: italic;">今年的比赛有25名才华横溢的参赛者参加了海选和初赛，8名决赛选手呈现了从中国古典民谣到当代流行歌曲的精彩表演。50多名观众营造了温馨支持的氛围，整个晚上都充满了热情的欢呼声和合唱。</p>
+          </article>
+          <article class="card reveal delay-3">
+            <h3>Commerce Panel</h3>
+            <p><strong>November 9, 2024</strong></p>
+            <p class="muted">Four McIntire students shared their application journeys, internship experiences, and career paths with 30+ attendees. Key insights included GPA strategies, extracurricular recommendations, and networking tips. Many students exchanged contact information with the panelists for follow-up mentorship and advice on their Commerce applications.</p>
+            <p class="muted" style="font-style: italic;">四名McIntire学生与30多名参会者分享了他们的申请历程、实习经历和职业道路。关键见解包括GPA策略、课外活动建议和网络建设技巧。许多学生与小组成员交换了联系方式，以便后续获得关于Commerce申请的指导和建议。</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Event Registration CTA -->
+    <section class="section">
+      <div class="container center">
+        <h2 class="reveal">Stay Updated</h2>
+        <p class="reveal delay-1">Don't miss out on upcoming events and activities.</p>
+        <div class="reveal delay-2" style="margin-top: 32px;">
+          <a class="btn btn--primary" href="join.html">Join Our Community</a>
+          <a class="btn" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Back to Top -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> UVA CSSS · Student-run organization. This site does not represent the University.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

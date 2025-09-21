@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>UVA CSSS | Chinese Students & Scholars Society</title>
+  <meta name="description" content="UVA Chinese Students & Scholars Society — events, team, join us, and partnerships.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- ===== Sticky Global Header (UVA-style band, compact height, shadow on scroll) ===== -->
+  <header id="site-header" class="header">
+    <div class="header-inner">
+      <a class="brand" href="#home" aria-label="CSSS Home">
+        <!-- TODO: replace with your logo: assets/logo.png -->
+        <img class="brand-logo" src="assets/logo.png" alt="CSSS Logo">
+        <span class="brand-text">UVA CSSS</span>
+      </a>
+
+      <!-- Primary Nav -->
+      <nav class="nav" aria-label="Primary">
+        <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="primary-menu">
+          <span class="menu-bars"></span>
+          <span class="sr-only">Menu</span>
+        </button>
+
+        <ul id="primary-menu" class="menu">
+          <li class="menu-item"><a href="about.html">About</a></li>
+
+          <!-- ===== Mega Menu trigger (like virginia.edu top-level "Academics/Admission" style) ===== -->
+          <li class="menu-item has-mega" aria-haspopup="true" aria-expanded="false">
+            <button class="mega-trigger">Events</button>
+            <div class="mega" role="group" aria-label="Events menu">
+              <div class="mega-col">
+                <h4>Highlights</h4>
+                <a href="events.html">Upcoming Events</a>
+                <a href="events.html?filter=cultural">Cultural</a>
+                <a href="events.html?filter=career">Career & Panels</a>
+              </div>
+              <div class="mega-col">
+                <h4>Get Involved</h4>
+                <a href="join.html">Join CSSS</a>
+                <a href="survival-guide.html">Survival Guide</a>
+              </div>
+            </div>
+          </li>
+
+          <li class="menu-item"><a href="team.html">Team</a></li>
+          <li class="menu-item"><a href="partners.html">Partners</a></li>
+          <li class="menu-item"><a href="resources.html">Resources</a></li>
+          <li class="menu-item"><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== Hero (large, edge-to-edge band like UVA site) ===== -->
+  <main id="home" tabindex="-1">
+    <section class="hero section--band">
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <h1 class="reveal">Connect · Support · Thrive</h1>
+          <p class="reveal delay-1">The UVA Chinese Students & Scholars Society fosters community, cultural exchange, and academic excellence for Chinese students and scholars at the University of Virginia.</p>
+        </div>
+        <!-- TODO: replace hero image: assets/hero.jpg (1600×900 recommended) -->
+        <div class="hero-visual reveal delay-3">
+          <img src="assets/hero.jpg" alt="CSSS event highlight">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Quick Overview ===== -->
+    <section class="section">
+      <div class="container">
+        <div class="center">
+          <h2 class="reveal">Welcome to UVA CSSS</h2>
+          <p class="reveal delay-1">The UVA Chinese Students & Scholars Society fosters community, cultural exchange, and academic excellence for Chinese students and scholars at the University of Virginia.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <h3>🎓 Academic Excellence</h3>
+            <p class="muted">Community connections and resource sharing to support your academic journey at UVA.</p>
+            <a href="about.html">Learn More</a>
+          </article>
+          <article class="card reveal delay-1">
+            <h3>🎉 Cultural Celebrations</h3>
+            <p class="muted">Traditional festivals, cultural workshops, and heritage preservation activities.</p>
+            <a href="events.html">View Events</a>
+          </article>
+          <article class="card reveal delay-2">
+            <h3>🤝 Community Support</h3>
+            <p class="muted">New student orientation, peer support, and a welcoming community network.</p>
+            <a href="join.html">Join Us</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Quick Links ===== -->
+    <section class="section section--alt">
+      <div class="container">
+        <div class="center">
+          <h2 class="reveal">Get Started</h2>
+          <p class="reveal delay-1">Everything you need to connect with our community and thrive at UVA.</p>
+          <div class="reveal delay-2" style="margin-top: 32px; display: flex; gap: 16px; justify-content: center; flex-wrap: wrap;">
+            <a class="btn btn--primary" href="join.html">Join CSSS</a>
+            <a class="btn" href="events.html">Upcoming Events</a>
+            <a class="btn" href="resources.html">Newcomer Guide</a>
+            <a class="btn" href="contact.html">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Back to Top (appears after scroll) -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
+
+  <!-- ===== Global Footer (slim, centered) ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> UVA CSSS · Student-run organization. This site does not represent the University.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
